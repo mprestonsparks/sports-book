@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-// Using the <Link> tag from react-router-dom rather than standard <a> tags (note the to: in <Link> versus a typical href= in an <a> tag)
 import { Link } from "react-router-dom";
 
 
