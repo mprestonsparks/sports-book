@@ -6,3 +6,8 @@ https://blog.bitsrc.io/build-a-login-auth-app-with-mern-stack-part-2-frontend-6e
 https://reactjs.org/docs/forms.html
 ## React- Handling Events
 https://reactjs.org/docs/handling-events.html
+
+
+## Tools/APIs
+JSON Placeholder
+https://jsonplaceholder.typicode.com/
