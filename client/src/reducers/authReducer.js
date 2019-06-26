@@ -1,7 +1,11 @@
-import {
-    SET_CURRENT_USER,
-    USER_LOADING
-  } from "../actions/types";
+// import {
+//     SET_CURRENT_USER,
+//     USER_LOADING
+//   } from "../actions/types";
+
+  import { SET_CURRENT_USER } from "../actions/types";
+  import { USER_LOADING } from "../actions/types";
+
   
   const isEmpty = require("is-empty");
   
