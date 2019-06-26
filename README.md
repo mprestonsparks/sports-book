@@ -6,6 +6,8 @@ https://blog.bitsrc.io/build-a-login-auth-app-with-mern-stack-part-2-frontend-6e
 https://reactjs.org/docs/forms.html
 ## React- Handling Events
 https://reactjs.org/docs/handling-events.html
+## React/Redux Video Tutorial
+https://youtu.be/93p3LxR9xfM?t=1378 
 
 
 ## Tools/APIs
