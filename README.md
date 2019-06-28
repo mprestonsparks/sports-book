@@ -8,3 +8,13 @@ https://reactjs.org/docs/forms.html
 ## React- Handling Events
 https://reactjs.org/docs/handling-events.html
 
+## Redux Crash Course with React
+https://www.youtube.com/watch?v=93p3LxR9xfM&feature=youtu.be
+=======
+## React/Redux Video Tutorial
+https://youtu.be/93p3LxR9xfM?t=1378 
+
+
+## Tools/APIs
+JSON Placeholder
+https://jsonplaceholder.typicode.com/
