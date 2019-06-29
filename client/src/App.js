@@ -50,14 +50,13 @@ class App extends Component {
               {/* Body Section */}
               {/* <div className="page-body"> */}
                 {/* <div className="col s12 center-align"> */}
-                <div className="row header-section">
-
-                  <Card />
-                </div>
+                {/* <div className="row header-section"> */}
+                  {/* <Card /> */}
                 {/* </div> */}
-              <div className="row">
-                <Table />
-              </div>
+                {/* </div> */}
+              {/* <div className="row"> */}
+                {/* <Table /> */}
+              {/* </div> */}
                 <div className="row">
 
                 <Route exact path="/" component={Landing} />

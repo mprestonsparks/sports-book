@@ -30,20 +30,22 @@ class Sidenav extends Component {
 
                     { user.name ? (
                         <div>
-                            <span className="white-text name">{user.name.split(" ")[0]}</span>
+                            <h4 className="white-text">{user.name.split(" ")[0]}</h4>
                             {/* <span className="white-text email"><LogoutButton /></span> */}
-                            <button
+                            <div
                                 style={{
-                                    width: "150px",
+                                    // width: "100%",
                                     borderRadius: "3px",
                                     letterSpacing: "1.5px",
                                     marginTop: "1rem"
                                 }}
                                 onClick={this.onLogoutClick}
-                                className="btn btn-small waves-effect waves-light hoverable accent-3"
+                                // className="btn btn-small waves-effect waves-light hoverable accent-3"
+                                className="hoverable accent-3"
+
                             >
                                 Logout
-                            </button>
+                            </div>
                         </div>
                     ) : (
                         <div>
@@ -85,8 +87,15 @@ class Sidenav extends Component {
                     
                 </div>
             </li>
-            <li><a href="#!">First Sidebar Link</a></li>
-            <li><a href="#!">Second Sidebar Link</a></li>
+            <li><a href="#!">Most Popular</a></li>
+            <li><a href="#!">My Wagers</a></li>
+            <hr className="link-break"></hr>
+            <li><a href="#!">NFL</a></li>
+            <li><a href="#!">NBA</a></li>
+            <li><a href="#!">NHL</a></li>
+            <li><a href="#!">MLB</a></li>
+            <li><a href="#!">All Events</a></li>
+
         </ul>
         {/* <a href={"google.com"} data-target="slide-out" class="sidenav-trigger"> */}
             {/* <i class="material-icons">menu</i> */}
