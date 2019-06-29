@@ -5,11 +5,11 @@ import React, { Component } from "react";
 class Card extends Component {
   render() {
     return (
-        <div class="row valign-wrapper">
-            <div class="col s12 valign">
-                <div class="card blue-grey darken-1">
-                    <div class="card-content white-text">
-                        <span class="card-title">Card Title</span>
+        <div className="row valign-wrapper">
+            <div className="col s12 valign">
+                <div className="card blue-grey darken-1">
+                    <div className="card-content white-text">
+                        <span className="card-title">Card Title</span>
                         <p>I am a very simple card. I am good at containing small bits of information.
                         I am convenient because I require little markup to use effectively.</p>
                     </div>
