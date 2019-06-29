@@ -5,6 +5,7 @@ class Table extends Component {
   render() {
     return (
         <div className="col s12">
+            <p>** ADD BET BUTTON TO TABLE</p>
             <table  className="highlight responsive-table">
             <thead>
             <tr>

@@ -9,9 +9,9 @@ class Card extends Component {
             <div className="col s12 valign">
                 <div className="card blue-grey darken-1">
                     <div className="card-content white-text">
-                        <span className="card-title">Card Title</span>
-                        <p>I am a very simple card. I am good at containing small bits of information.
-                        I am convenient because I require little markup to use effectively.</p>
+                        <span className="card-title">HEADER</span>
+                        <p></p>
+                        <p>Probably carosel through some data like "top winners", etc</p>
                     </div>
                 </div>
             </div>
