@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import Card from "./Card";
 import Table from "./Table";
+import PostForm from "./Postform";
 
 
 class Landing extends Component {
@@ -15,6 +16,8 @@ class Landing extends Component {
 
         <div className="row">
           <div className="col s12 center-align">
+            <PostForm />
+            <hr />
             <Table />
           </div>
         </div>
