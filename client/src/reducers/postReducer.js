@@ -14,7 +14,13 @@ export default function(state = initialState, action) {
             return {
                 ...state,
                 items: action.payload
-            }
+            };
+        case NEW_POST:
+            // ********  UPDATE TO POST TO MongoDB; Ref. 59:10 on Redux vid   ********
+            return {
+                ...state,
+                item: action.payload
+            };
         default:
             return state;
 
