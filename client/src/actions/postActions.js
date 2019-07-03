@@ -1,9 +1,13 @@
 import { FETCH_POSTS, NEW_POST } from "./types";
+// const events = require("../routes/api/events");
+// const events = require("../../../routes/api/events");
+
 
 export function fetchPosts() {
     return function(dispatch) {
         // console.log('fetching')
-        fetch("https://jsonplaceholder.typicode.com/posts")
+        fetch("/api/events")
+        // fetch(events)
             .then(res => res.json())
             .then(posts => dispatch({
                 type: FETCH_POSTS,
@@ -14,7 +18,8 @@ export function fetchPosts() {
 
 export const createPost = postData => dispatch => {
     console.log('action called')
-    fetch('https://jsonplaceholder.typicode.com/posts', {
+    // fetch('/api/addPost')
+    fetch('/', {
         method: 'POST',
         headers: {
             'content-type': 'application/json'

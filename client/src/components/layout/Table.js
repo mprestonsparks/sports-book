@@ -18,9 +18,9 @@ class Table extends Component {
 
   render() {
     const postItems = this.props.posts.map(post => (
-        <div key={post.id}>
-            <h3>{post.title}</h3>
-            <p>{post.body}</p>
+        <div key={post._id}>
+            <h3>{post.homeTeamName}</h3>
+            {/* <p>{post.body}</p> */}
         </div>
     ));
     return (
