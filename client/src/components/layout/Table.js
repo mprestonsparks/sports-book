@@ -19,13 +19,39 @@ class Table extends Component {
   render() {
     const postItems = this.props.posts.map(post => (
         <div key={post._id}>
-            <h3>{post.homeTeamName}</h3>
+            <table className="highlight responsive-table">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Away Team</th>
+                        <th>Home Team</th>
+                        <th>Away Odds</th>
+                        <th>Home Odds</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> { post.eventDate } </td>
+                        <td> { post.awayTeamName } </td>
+                        <td> { post.homeTeamName } </td>
+                        <td> { post.awayTeamOdds } </td>
+                        <td> { post.homeTeamOdds } </td>
+                    </tr>
+
+
+                </tbody>
+
+
+            {/* <p>{post.homeTeamName}</p> */}
             {/* <p>{post.body}</p> */}
+
+
+            </table>
         </div>
     ));
     return (
         <div className="col s12 table">
-            <h1>Posts</h1>
+            <h2>Upcoming Events</h2>
             {postItems}
 
             {/* <p>** ADD BET BUTTON TO TABLE</p> */}
