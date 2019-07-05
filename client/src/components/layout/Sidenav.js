@@ -87,14 +87,14 @@ class Sidenav extends Component {
                     
                 </div>
             </li>
-            <li><a href="#!">Most Popular</a></li>
-            <li><a href="#!">My Wagers</a></li>
+            <li><a href="/">Most Popular</a></li>
+            <li><a href="/dashboard">My Wagers</a></li>
             <hr className="link-break"></hr>
-            <li><a href="#!">NFL</a></li>
-            <li><a href="#!">NBA</a></li>
-            <li><a href="#!">NHL</a></li>
-            <li><a href="#!">MLB</a></li>
-            <li><a href="#!">All Events</a></li>
+            <li><a href="/">NFL</a></li>
+            <li><a href="/">NBA</a></li>
+            <li><a href="/">NHL</a></li>
+            <li><a href="/">MLB</a></li>
+            <li><a href="/">All Events</a></li>
 
         </ul>
         {/* <a href={"google.com"} data-target="slide-out" class="sidenav-trigger"> */}

@@ -1,4 +1,4 @@
-import { FETCH_POSTS, NEW_POST } from "./types";
+import { FETCH_POSTS, FETCH_BETS, NEW_POST } from "./types";
 // const events = require("../routes/api/events");
 // const events = require("../../../routes/api/events");
 
@@ -12,6 +12,19 @@ export function fetchPosts() {
             .then(posts => dispatch({
                 type: FETCH_POSTS,
                 payload: posts
+            }));
+    }
+}
+
+export function fetchBets() {
+    return function(dispatch) {
+        // console.log('fetching')
+        fetch("/api/bets")
+        // fetch(events)
+            .then(res => res.json())
+            .then(bets => dispatch({
+                type: FETCH_BETS,
+                payload: bets
             }));
     }
 }

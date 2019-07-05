@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { fetchPosts } from '../../actions/postActions'
+import { fetchBets } from '../../actions/postActions'
 
 
-class Table extends Component {
+
+class BetTable extends Component {
   componentWillMount() {
-      this.props.fetchPosts();
+      this.props.fetchBets();
   }
 
   componentWillReceiveProps(nextProps) {
@@ -63,9 +64,9 @@ class Table extends Component {
   }
 }
 
-Table.propTypes = {
+BetTable.propTypes = {
     // fetchPosts function is a property in redux
-    fetchPosts: PropTypes.func.isRequired,
+    fetchBets: PropTypes.func.isRequired,
     posts: PropTypes.array.isRequired,
     newPost: PropTypes.object
 };
@@ -76,4 +77,4 @@ const mapStateToProps = state => ({
     newPost: state.posts.item
 });
 
-export default connect(mapStateToProps, { fetchPosts })(Table);
+export default connect(mapStateToProps, { fetchBets })(BetTable);

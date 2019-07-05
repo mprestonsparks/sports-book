@@ -3,7 +3,7 @@ import React, { Component } from "react";
 
 
 class Card extends Component {
-  render() {
+  render() {    
     return (
         <div className="row valign-wrapper">
             <div className="col s12 valign">
@@ -16,7 +16,6 @@ class Card extends Component {
                 </div>
             </div>
         </div>
-              
     );
   }
 }
