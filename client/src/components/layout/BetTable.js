@@ -18,40 +18,40 @@ class BetTable extends Component {
 
   render() {
     const postItems = this.props.posts.map(post => (
-                <tr> 
-                <div key={post._id}>
-                    <div className="col l3">
-                        <td> 
-                            <button id= { post._id } >
-                                Bet
-                            </button> 
-                        </td>
-                    </div>
-                    <div className="col l3">
-                        <td> { post.eventDate } </td>
-                    </div>
-                    <div className="col s3">
-                        <div className="row">
-                            <div className="col s12">
-                                <td> { post.awayTeamName } </td>
-                            </div>
-                            <div className="col s12">
-                                <td> { post.homeTeamName } </td>
-                            </div>
+        <tr> 
+            <div key={post._id}>
+                <div className="col l3">
+                    {/* <td> 
+                        <button id= { post._id } >
+                            Bet
+                        </button> 
+                    </td> */}
+                </div>
+                <div className="col l3">
+                    <td> { post.eventDate } </td>
+                </div>
+                <div className="col s3">
+                    <div className="row">
+                        <div className="col s12">
+                            <td> { post.awayTeamName } </td>
+                        </div>
+                        <div className="col s12">
+                            <td> { post.homeTeamName } </td>
                         </div>
                     </div>
-                    <div className="col s3">
-                        <div className="row">
-                            <div className="col s12">
-                                <td> { post.awayTeamOdds } </td>
-                            </div>
-                            <div className="col s12">
-                                <td> { post.homeTeamOdds } </td>
-                            </div>
+                </div>
+                <div className="col s3">
+                    <div className="row">
+                        <div className="col s12">
+                            <td> { post.awayTeamOdds } </td>
+                        </div>
+                        <div className="col s12">
+                            <td> { post.homeTeamOdds } </td>
                         </div>
                     </div>
-            </div>
-                </tr>
+                </div>
+        </div>
+        </tr>
     ));
 
     return (
