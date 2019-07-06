@@ -10,56 +10,96 @@ class BetTable extends Component {
       this.props.fetchBets();
   }
 
-  componentWillReceiveProps(nextProps) {
-    if(nextProps.newPost) {
-        this.props.posts.unshift(nextProps.newPost);
-    }
-  }
+//   componentWillReceiveProps(nextProps) {
+//     if(nextProps.newPost) {
+//         this.props.posts.unshift(nextProps.newPost);
+//     }
+//   }
 
   render() {
-    const postItems = this.props.posts.map(post => (
+    const betItems = this.props.bets.map(bet => (
         <tr> 
-            <div key={post._id}>
-                <div className="col l3">
-                    {/* <td> 
-                        <button id= { post._id } >
-                            Bet
-                        </button> 
-                    </td> */}
+            <div key={bet._id}>
+                <div className="col s2">
+                    <td>
+                        <div className="row">
+                            <div className="col s12 table-header">
+                                Date Submitted
+                            </div>
+                            <div className="col s12">
+                                { bet.betDate }
+                            </div>
+                        </div>                    
+                    </td>
                 </div>
-                <div className="col l3">
-                    <td> { post.eventDate } </td>
+                <div className="col s2">
+                    <td> 
+                        <div className="row">
+                            <div className="col s12 table-header">
+                                Betting On
+                            </div>
+                            <div className="col s12">
+                                { bet.betTeam }
+                            </div>
+                        </div>
+                    </td>
                 </div>
                 <div className="col s3">
+                    <td>
                     <div className="row">
-                        <div className="col s12">
-                            <td> { post.awayTeamName } </td>
+                        <div className="col s12 table-header">
+                            Game Date
                         </div>
                         <div className="col s12">
-                            <td> { post.homeTeamName } </td>
+                            <div className="row">
+                                <div className="col s12">
+                                    { bet.awayTeam } @ { bet.homeTeam }
+                                </div>
+                                <div className="col s12">
+                                    { bet.eventDate }
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    </td>
+
                 </div>
-                <div className="col s3">
+                <div className="col s5">
                     <div className="row">
                         <div className="col s12">
-                            <td> { post.awayTeamOdds } </td>
-                        </div>
-                        <div className="col s12">
-                            <td> { post.homeTeamOdds } </td>
-                        </div>
+                            <td>
+                                <div className="row">
+                                    <div className="col s12 table-header">
+                                        Bet Amount
+                                    </div>
+                                    <div className="col s12">
+                                        { bet.betAmount }
+                                    </div>
+                                    <div className="col s12 table-header">
+                                        Payout
+                                    </div>
+                                    <div className="col s12">
+                                        { bet.betValue }
+                                    </div>
+                                </div>
+                            </td>
+                        </div>    
                     </div>
                 </div>
-        </div>
+            </div>
         </tr>
     ));
 
     return (
+        <div className="row valign-wrapper">
+        <div className="col s12 valign">
         <table className="highlight responsive-table">
             <tbody>
-                { postItems }
+                { betItems }
             </tbody>
         </table>
+        </div>
+        </div>
     );
   }
 }
@@ -67,14 +107,14 @@ class BetTable extends Component {
 BetTable.propTypes = {
     // fetchPosts function is a property in redux
     fetchBets: PropTypes.func.isRequired,
-    posts: PropTypes.array.isRequired,
-    newPost: PropTypes.object
+    bets: PropTypes.array.isRequired,
+    // newPost: PropTypes.object
 };
 
 const mapStateToProps = state => ({
     // setting to 'posts' bc object is defined as 'posts' in root-reducer
-    posts: state.posts.items,
-    newPost: state.posts.item
+    bets: state.posts.items,
+    // newPost: state.posts.item
 });
 
 export default connect(mapStateToProps, { fetchBets })(BetTable);

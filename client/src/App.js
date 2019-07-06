@@ -9,8 +9,8 @@ import store from "./store";
 
 import Sidenav from "./components/layout/Sidenav";
 import Navbar from "./components/layout/Navbar";
-import Card from "./components/layout/Card";
-import Table from "./components/layout/Table";
+// import Card from "./components/layout/Card";
+// import Table from "./components/layout/Table";
 import Landing from "./components/layout/Landing";
 import Register from "./components/auth/Register";
 import Login from "./components/auth/Login";
