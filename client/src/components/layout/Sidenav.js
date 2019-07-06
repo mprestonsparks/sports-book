@@ -15,29 +15,28 @@ class Sidenav extends Component {
     const { user } = this.props.auth;
     return (
       <div>
-        <ul id="slide-out" className="sidenav sidenav-fixed">
+        <ul id="slide-out" className="sidenav sidenav-fixed background blue-grey lighten-5 z-depth-0">
             <li>
                 <div className="user-view">
-                    <div className="background light-green">
+                    <div className="background blue darken-4">
                     </div>
-                    <div className="valign-center align-center">
-                        <h2>LOGO</h2>
+                    <div className="valign-center align-center white-text logo">
+                        <h3>AWESOME LOGO</h3>
                     </div>
 
                     { user.name ? (
                         <div>
-                            <h4 className="white-text">{user.name.split(" ")[0]}</h4>
+                            <div className="white-text navbar-username">
+                                 {user.name.split(" ")[0]}
+                            </div>
                             <div
                                 style={{
+                                    width: "150px",
                                     borderRadius: "3px",
-                                    letterSpacing: "1.5px",
-                                    marginTop: "1rem",
-                                    marginLeft: "-30px",
-                                    paddingLeft: "30px",
-                                    width: "300px"
-                                }}
+                                    letterSpacing: "1.5px"
+                                    }}
                                 onClick={this.onLogoutClick}
-                                className="hoverable accent-3"
+                                className="hoverable accent-3 white-text"
                             >
                                 Logout
                             </div>
@@ -45,7 +44,7 @@ class Sidenav extends Component {
                     ) : (
                         <div>
                             <div className="row">
-                                <div className="col s6 hoverable">
+                                <div className="col s12 hoverable">
                                     <Link
                                         to="/login"
                                         style={{
@@ -58,7 +57,7 @@ class Sidenav extends Component {
                                         Log In
                                     </Link>
                                 </div>
-                                <div className="col s6 hoverable">
+                                <div className="col s12 hoverable">
                                     <Link
                                         to="/register"
                                         style={{
@@ -76,14 +75,14 @@ class Sidenav extends Component {
                     )}  
                 </div>
             </li>
-            <li><a href="/">Most Popular</a></li>
-            <li><a href="/dashboard">My Wagers</a></li>
+            <li className="hoverable"><a href="/">Most Popular</a></li>
+            <li className="hoverable"><a href="/dashboard">My Wagers</a></li>
             <hr className="link-break"></hr>
-            <li><a href="/">NFL</a></li>
-            <li><a href="/">NBA</a></li>
-            <li><a href="/">NHL</a></li>
-            <li><a href="/">MLB</a></li>
-            <li><a href="/">All Events</a></li>
+            <li className="hoverable"><a href="/">NFL</a></li>
+            <li className="hoverable"><a href="/">NBA</a></li>
+            <li className="hoverable"><a href="/">NHL</a></li>
+            <li className="hoverable"><a href="/">MLB</a></li>
+            <li className="hoverable"><a href="/">All Events</a></li>
 
         </ul>
       </div>

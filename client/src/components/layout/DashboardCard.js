@@ -13,27 +13,38 @@ class DashboardCard extends Component {
         return (
             <div>
                 {user.name ? (
-                    <div className="row valign-wrapper">
-                        <div className="col s12 valign">
-                            <div className="card blue-grey darken-1">
-                                <div className="card-content white-text">
-                                    <span className="card-title"> {user.name.split(" ")[0]} </span>
-                                    <p>Probably carosel through some data like "top winners", etc</p>
+                    <div className="header">
+                        <div className="row valign-wrapper">
+                            <div className="col s12 valign">
+                                <div className="header-greeting"> 
+                                    { user.name.split(" ")[0] }'s Bets
+                                </div>
+                                <div className="header-text">
+                                    <p>
+                                        You have 5 open bets totaling $690.00 
+                                    </p>
+                                    <p>
+                                        worth a total payout of $845.00
+                                    </p>   
                                 </div>
                             </div>
                         </div>
                     </div>
+
+                    
                 ) : (
+                    <div className="header">
                         <div className="row valign-wrapper">
                             <div className="col s12 valign">
-                                <div className="card blue-grey darken-1">
-                                    <div className="card-content white-text">
-                                        <span className="card-title"> NOT LOGGED IN </span>
-                                        <p>Probably carosel through some data like "top winners", etc</p>
-                                    </div>
+                                <div className="header-greeting">
+                                    Welcome to TN Sportsbook!
+                                </div>
+                                <div className="header-text">
+                                    <p>Sign in to start betting!</p>
                                 </div>
                             </div>
                         </div>
+                    </div>
                     )}
             </div>
         );

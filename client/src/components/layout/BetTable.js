@@ -91,14 +91,17 @@ class BetTable extends Component {
     ));
 
     return (
-        <div className="row valign-wrapper">
-        <div className="col s12 valign">
-        <table className="highlight responsive-table">
-            <tbody>
-                { betItems }
-            </tbody>
-        </table>
-        </div>
+        <div>
+            {/* <div className="row valign-wrapper"> */}
+                {/* <div className="col s12 valign"> */}
+                <h2 className="table-label">Open Wagers</h2>
+                <table className="highlight responsive-table striped">
+                    <tbody>
+                        { betItems }
+                    </tbody>
+                </table>
+                {/* </div> */}
+            {/* </div> */}
         </div>
     );
   }

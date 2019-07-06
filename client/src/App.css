@@ -1,4 +1,6 @@
 
+
+
 .container .header-section {
     display: flex;
     position: absolute;
@@ -16,34 +18,39 @@
     background-color: orange;
 }
 
-/* .sidenav {
-    top: "-40px";
-} */
-/* .sidenav-logo-container {
-    background-color: blue;
-    width: "300px";
-    margin-top: "40px";
-    padding: "40px 0 0 0";
-} */
-
-/* .sidenav-logo-content {
-    padding: "0 0 0 38px";
-    margin: "0 0 0 38px";
-    background-color: "pink";
-} */
-
-/* .sidenav-test {
-    width: "300px"
-} */
-
-/* .sidenav-links {
-    margin: "0 0 0 20px";
-} */
-
 .card {
-    /* margin: 35px 0 35px 0; */
-    padding: 35px 0 31px 0;
+    padding: 0px 0 31px 0;
+    text-align: center;
 }
+
+.card p {
+    font-size: 2em;
+}
+
+.header {
+    padding: 0 0 0 0;
+    margin: 0px 0 10px 0;
+    text-align: center;
+    height: 217px;
+    background-color: #0d47a1
+}
+
+.header-greeting {
+    text-align: center;
+    font-size: 3em;
+    margin: 20px 0 0 0;
+    color: white ;
+}
+
+.header-text {
+    text-align: center;
+    padding: 0px 0 25px 0;
+    margin: 0 0 15px 0;
+    color: #b0bec5;
+    font-size: 20px;
+
+}
+
 
 .table {
     margin: auto;
@@ -51,6 +58,13 @@
     background-color: lightyellow;
 }
 
+.table-label {
+    text-align: left;
+    font-weight: bold;
+    /* padding: 20px 0 0 0; */
+    margin: 20px 0 70px 15px;
+    text-decoration: underline;
+}
 .table-header {
     font-weight: bold;
 }
@@ -59,6 +73,21 @@
     margin: auto;
     text-align: left;
     background-color: lightgreen;
+}
+
+.logo {
+  border-style: solid;
+  border-width: 5px;
+  border-color: #fff176 ;
+  text-align: center;
+    
+}
+
+.navbar-username {
+    width: "150px";
+    border-radius: "3px";
+    letter-spacing: "1.5px";
+    font-size: 20px;
 }
 
 .link-break {

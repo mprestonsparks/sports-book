@@ -19,33 +19,69 @@ class Table extends Component {
     const postItems = this.props.posts.map(post => (
                 <tr> 
                 <div key={post._id}>
-                    <div className="col l3">
+                    <div className="col s2">
                         <td> 
-                            <button id= { post._id } >
-                                Bet
+                            <button 
+                                className="btn btn-medium waves-effect waves-light blue-grey lighten-5 black-text"
+                                id= { post._id } 
+                            >
+                                Place Bet
                             </button> 
                         </td>
                     </div>
-                    <div className="col l3">
-                        <td> { post.eventDate } </td>
+                    <div className="col s2">
+                        <td> 
+                        <div className="row">
+                            <div className="col s12 table-header">
+                                Game Date
+                            </div>
+                            <div className="col s12">
+                                { post.eventDate }
+                            </div>
+                        </div>
+                        </td>
                     </div>
                     <div className="col s3">
                         <div className="row">
                             <div className="col s12">
-                                <td> { post.awayTeamName } </td>
-                            </div>
-                            <div className="col s12">
-                                <td> { post.homeTeamName } </td>
+                                <td> 
+                                    <div className="row">
+                                        <div className="col s12 table-header">
+                                            Away Team
+                                        </div>
+                                        <div className="col s12">
+                                            { post.awayTeamName } 
+                                        </div>
+                                        <div className="col s12 table-header">
+                                            Home Team
+                                        </div>
+                                        <div className="col s12">
+                                            { post.homeTeamName } 
+                                        </div>
+                                    </div>
+                                </td>
                             </div>
                         </div>
                     </div>
-                    <div className="col s3">
+                    <div className="col s5">
                         <div className="row">
                             <div className="col s12">
-                                <td> { post.awayTeamOdds } </td>
-                            </div>
-                            <div className="col s12">
-                                <td> { post.homeTeamOdds } </td>
+                                <td> 
+                                    <div className="row">
+                                        <div className="col s12 table-header">
+                                            Away Odds
+                                        </div>
+                                        <div className="col s12">
+                                            { post.awayTeamOdds } 
+                                        </div>
+                                        <div className="col s12 table-header">
+                                            Home Odds
+                                        </div>
+                                        <div className="col s12">
+                                            { post.homeTeamOdds } 
+                                        </div>
+                                    </div>
+                                </td>
                             </div>
                         </div>
                     </div>
@@ -54,11 +90,14 @@ class Table extends Component {
     ));
 
     return (
-        <table className="highlight responsive-table">
-            <tbody>
-                { postItems }
-            </tbody>
-        </table>
+        <div>
+            <h2 className="table-label">Upcoming Events</h2>
+            <table className="highlight responsive-table striped">
+                <tbody>
+                    { postItems }
+                </tbody>
+            </table>
+        </div>
     );
   }
 }
