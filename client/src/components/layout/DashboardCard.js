@@ -22,10 +22,9 @@ class DashboardCard extends Component {
                                 <div className="header-text">
                                     <p>
                                         You have 5 open bets totaling $690.00 
-                                    </p>
-                                    <p>
+                                        <br></br>
                                         worth a total payout of $845.00
-                                    </p>   
+                                    </p>
                                 </div>
                             </div>
                         </div>
