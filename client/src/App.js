@@ -7,7 +7,10 @@ import { setCurrentUser, logoutUser } from "./actions/authActions";
 import { Provider } from "react-redux";
 import store from "./store";
 
+import Sidenav from "./components/layout/Sidenav";
 import Navbar from "./components/layout/Navbar";
+// import Card from "./components/layout/Card";
+// import Table from "./components/layout/Table";
 import Landing from "./components/layout/Landing";
 import Register from "./components/auth/Register";
 import Login from "./components/auth/Login";
@@ -41,13 +44,30 @@ class App extends Component {
       <Provider store={store}>
         <Router>
           <div className="App">
-            <Navbar />
-            <Route exact path="/" component={Landing} />
-            <Route exact path="/register" component={Register} />
-            <Route exact path="/login" component={Login} />
-            <Switch>
-              <PrivateRoute exact path="/dashboard" component={Dashboard} />
-            </Switch>
+            <Sidenav />
+            <div style={{paddingLeft: "300px"}}>
+              <Navbar />
+              {/* Body Section */}
+              {/* <div className="page-body"> */}
+                {/* <div className="col s12 center-align"> */}
+                {/* <div className="row header-section"> */}
+                  {/* <Card /> */}
+                {/* </div> */}
+                {/* </div> */}
+              {/* <div className="row"> */}
+                {/* <Table /> */}
+              {/* </div> */}
+                <div className="row">
+
+                <Route exact path="/" component={Landing} />
+                <Route exact path="/register" component={Register} />
+                <Route exact path="/login" component={Login} />
+                <Switch>
+                  <PrivateRoute exact path="/dashboard" component={Dashboard} />
+                </Switch>
+                </div>
+              {/* </div> */}
+            </div>
           </div>
         </Router>
       </Provider>

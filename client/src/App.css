@@ -1,0 +1,96 @@
+
+
+
+.container .header-section {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.container .row .header-section{
+    margin: 0 auto;
+  }
+
+.header-section {
+    background-color: orange;
+}
+
+.card {
+    padding: 0px 0 31px 0;
+    text-align: center;
+}
+
+.card p {
+    font-size: 2em;
+}
+
+.header {
+    padding: 0 0 0 0;
+    margin: 0px 0 10px 0;
+    text-align: center;
+    height: 217px;
+    background-color: #0d47a1
+}
+
+.header-greeting {
+    text-align: center;
+    font-size: 3em;
+    margin: 20px 0 0 0;
+    color: white ;
+}
+
+.header-text {
+    text-align: center;
+    padding: 0px 0 25px 0;
+    margin: 0 0 15px 0;
+    color: #b0bec5;
+    font-size: 20px;
+
+}
+
+
+.table {
+    margin: auto;
+    text-align: left;
+    background-color: lightyellow;
+}
+
+.table-label {
+    text-align: left;
+    font-weight: bold;
+    /* padding: 20px 0 0 0; */
+    margin: 20px 0 70px 15px;
+    text-decoration: underline;
+}
+.table-header {
+    font-weight: bold;
+}
+
+.add-form {
+    margin: auto;
+    text-align: left;
+    background-color: lightgreen;
+}
+
+.logo {
+  border-style: solid;
+  border-width: 5px;
+  border-color: #fff176 ;
+  text-align: center;
+    
+}
+
+.navbar-username {
+    width: "150px";
+    border-radius: "3px";
+    letter-spacing: "1.5px";
+    font-size: 20px;
+}
+
+.link-break {
+    margin: 0 32px;
+    padding: 0 32px;
+}
