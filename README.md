@@ -18,12 +18,3 @@ https://youtu.be/93p3LxR9xfM?t=1378
 ## Tools/APIs
 JSON Placeholder
 https://jsonplaceholder.typicode.com/
-
-
-## Live Sports Odds API
-https://rapidapi.com/theoddsapi/api/live-sports-odds?endpoint=5b9ca048e4b09cbc25b04332
-
-
-
-## Git- Create Branch off of Existing Branch
-https://stackoverflow.com/questions/4470523/create-a-branch-in-git-from-another-branch
