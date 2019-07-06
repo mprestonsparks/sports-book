@@ -1,8 +1,4 @@
 
-.page-body {
-    background-color: blueviolet;
-}
-
 .container .header-section {
     display: flex;
     position: absolute;
@@ -17,23 +13,36 @@
   }
 
 .header-section {
-    /* width: 500px; */
     background-color: orange;
 }
 
-/* CARD */
+/* .sidenav {
+    top: "-40px";
+} */
+/* .sidenav-logo-container {
+    background-color: blue;
+    width: "300px";
+    margin-top: "40px";
+    padding: "40px 0 0 0";
+} */
+
+/* .sidenav-logo-content {
+    padding: "0 0 0 38px";
+    margin: "0 0 0 38px";
+    background-color: "pink";
+} */
+
+/* .sidenav-test {
+    width: "300px"
+} */
+
+/* .sidenav-links {
+    margin: "0 0 0 20px";
+} */
+
 .card {
     /* margin: 35px 0 35px 0; */
     padding: 35px 0 31px 0;
-}
-
-/* .card-content {
-    padding: 50px 0 50px 0;
-} */
-
-/* TABLE */
-table {
-    /* background-color: lightblue; */
 }
 
 .table {
@@ -44,8 +53,6 @@ table {
 
 .table-header {
     font-weight: bold;
-    /* background-color: blue; */
-    /* text-decoration: underline; */
 }
 
 .add-form {

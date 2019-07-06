@@ -18,9 +18,9 @@ class Sidenav extends Component {
         <ul id="slide-out" className="sidenav sidenav-fixed">
             <li>
                 <div className="user-view">
-                    <div className="background red">
+                    <div className="background light-green">
                     </div>
-                    <div className="white valign-center align-center">
+                    <div className="valign-center align-center">
                         <h2>LOGO</h2>
                     </div>
 
@@ -31,7 +31,10 @@ class Sidenav extends Component {
                                 style={{
                                     borderRadius: "3px",
                                     letterSpacing: "1.5px",
-                                    marginTop: "1rem"
+                                    marginTop: "1rem",
+                                    marginLeft: "-30px",
+                                    paddingLeft: "30px",
+                                    width: "300px"
                                 }}
                                 onClick={this.onLogoutClick}
                                 className="hoverable accent-3"
@@ -42,11 +45,11 @@ class Sidenav extends Component {
                     ) : (
                         <div>
                             <div className="row">
-                                <div className="col s6">
+                                <div className="col s6 hoverable">
                                     <Link
                                         to="/login"
                                         style={{
-                                        width: "140px",
+                                        width: "150px",
                                         borderRadius: "3px",
                                         letterSpacing: "1.5px"
                                         }}
@@ -55,11 +58,11 @@ class Sidenav extends Component {
                                         Log In
                                     </Link>
                                 </div>
-                                <div className="col s6">
+                                <div className="col s6 hoverable">
                                     <Link
                                         to="/register"
                                         style={{
-                                        width: "140px",
+                                        width: "150px",
                                         borderRadius: "3px",
                                         letterSpacing: "1.5px"
                                         }}
